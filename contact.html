@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vikingfood - Kontakt os</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link">Reserver Bord</a>
+            </li>
+            <li class="navbar__item">
+              <a href="about.html" class="navbar__link">
+                Om Viking Food
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="contact.html" class="navbar__link--active">
+                Kontakt Viking Food
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content-container">
+        <section class="contact">
+          <h1 class="heading heading-1">Kontakt os</h1>
+          <form
+            name="contactForm"
+            class="contact-form"
+            onsubmit="return validateForm()"
+          >
+            <label for="inputName" class="contact-form__label">Navn:</label>
+            <input
+              type="text"
+              id="input-name"
+              name="inputName"
+              class="contact-form__input"
+              title="Name Input"
+              minlength="1"
+              maxlength="100"
+            />
+            <label for="inputTitle" class="contact-form__label">Emne:</label>
+            <input
+              type="text"
+              id="input-title"
+              name="inputTitle"
+              class="contact-form__input"
+              title="Title Input"
+              minlength="3"
+              maxlength="500"
+            />
+            <label for="inputMessage" class="contact-form__label"
+              >Besked:</label
+            >
+            <textarea
+              name="inputMessage"
+              id="input-message"
+              class="contact-form__input"
+              title="Message Textarea"
+              minlength="50"
+              maxlength="2000"
+            ></textarea>
+            <input type="submit" class="contact-form__btn" value="Submit" />
+            <div id="form-errors" class="contact-form__errors"></div>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="index.html" class="logo mb-md">
+          <img
+            src="./img/viking-logo.svg"
+            alt="Logo Photo"
+            title="Logo Photo"
+            class="logo__img"
+          />
+          <span class="logo__text">
+            viking<span class="logo__text--alt">food</span>
+          </span>
+        </a>
+        <div class="footer__text mb-md">
+          <span>ÅBoulevarden 666</span>
+          <span>8000 Århus C</span>
+          <a href="tel:+4512233445">Tlf. 12 23 34 45</a>
+          <a href="mailto:info@vikingfood.com">
+            info@vikingfood.com
+          </a>
+        </div>
+        <div class="footer__social">
+          <a href="#">
+            <i class="footer__icon icon-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="footer__icon icon-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/Validate.js"></script>
+  </body>
+</html>
